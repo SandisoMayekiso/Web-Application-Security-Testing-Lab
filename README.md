@@ -146,13 +146,13 @@ The payload was reflected in the HTML response as:
 
 ### Payload Tested
 
-" <b>hello</b> "
+" <b > hello < /b> "
 
 ### Server Response Analysis
 
 The payload was reflected in the HTML response as:
 
-Results for: &lt;b&gt;hello&lt;/b&gt;
+ &lt ;b& gt;hello& lt;/b &g t;
 
 Conclusion
 
