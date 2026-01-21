@@ -43,11 +43,17 @@ The application runs **entirely on localhost**, demonstrating that professional 
 
 Local-Vulnerable-App/
 │
+
 ├── app.py
+
 ├── users.db
+
 ├── templates/
+
 │ ├── login.html
+
 │ ├── dashboard.html
+
 │ └── search.html
 └── README.md
 
@@ -96,7 +102,11 @@ This project follows a **manual web application penetration testing workflow**, 
 Example payloads tested:
 
 ' OR '1'='1
+
+
 admin' --
+
+
 ' OR 1=1 --
 
 
@@ -123,25 +133,26 @@ admin' --
 
 ### Payload Tested
 
-<script>alert(1)</script>
+" <script>alert(1)</script> "
 
-<b>hello</b>
 
 
 ### Server Response Analysis
 
 The payload was reflected in the HTML response as:
 
-html
+
 &lt;script&gt;alert(1)&lt;/script&gt;
 
 ### Payload Tested
 
-<b>hello</b>
+" <b>hello</b> "
 
 ### Server Response Analysis
 
 The payload was reflected in the HTML response as:
+
+Results for: &lt;b&gt;hello&lt;/b&gt;
 
 Conclusion
 
