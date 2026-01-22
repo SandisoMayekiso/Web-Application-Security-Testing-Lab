@@ -160,7 +160,7 @@ The payload was reflected in the HTML response as:
 
 ### Payload Tested
 
-" <b > hello < /b> "
+" < b > hello < /b> "
 
 ### Server Response Analysis
 
