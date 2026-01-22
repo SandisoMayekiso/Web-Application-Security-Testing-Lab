@@ -99,6 +99,13 @@ This project follows a **manual web application penetration testing workflow**, 
 - Sent captured requests to **Burp Repeater**
 - Manually injected SQL payloads into parameters
 
+ <img width="1020" height="690" alt="1BurpLogin" src="https://github.com/user-attachments/assets/97a2f131-f98e-4cb0-a91a-700cf1b4eeb4" />
+ 
+<img width="1019" height="722" alt="1Clicksendon Repeater" src="https://github.com/user-attachments/assets/98fd5fbf-d31e-42f1-93d5-ee2d8b232747" />
+
+<img width="1034" height="606" alt="1ModifiesparametersonBurp" src="https://github.com/user-attachments/assets/c8df9c19-7664-4b47-83f3-7f60eee9828f" />
+
+
 Example payloads tested:
 
 ' OR '1'='1
@@ -109,10 +116,10 @@ admin' --
 
 ' OR 1=1 --
 
+<img width="333" height="342" alt="Attack1" src="https://github.com/user-attachments/assets/ecbe37b9-c958-4c9a-a3a0-4a71c5f505d6" />
 
 ### Observations
 
-- Application behavior changed based on injected input
 - Authentication logic did not properly sanitize user input
 - Indicates **SQL Injection vulnerability** in login handling
 
@@ -122,6 +129,8 @@ admin' --
 - Unauthorized access to application
 - Potential exposure of sensitive data
 
+<img width="402" height="359" alt="1Access gained" src="https://github.com/user-attachments/assets/c455d350-88d5-47e2-80b8-469cfa23cf59" />
+
 ---
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -130,6 +139,8 @@ admin' --
 
 ### Target
 - Search functionality (  GET /search?q=  )
+
+<img width="758" height="540" alt="1XSSpage" src="https://github.com/user-attachments/assets/b4aff178-a80f-4726-aecb-2bb14508f201" />
 
 ### Payload Tested
 
@@ -143,6 +154,9 @@ The payload was reflected in the HTML response as:
 
 
 &lt;script&gt;alert(1)&lt;/script&gt;
+
+<img width="1035" height="730" alt="5XSSmodified parameters" src="https://github.com/user-attachments/assets/4b0e33cb-1fba-45ac-9f7a-e834479a047e" />
+
 
 ### Payload Tested
 
@@ -251,4 +265,15 @@ No unauthorized testing was conducted against real-world systems.
 
 Sandiso
 Aspiring Cybersecurity & Web Application Security Professional
+
+
+---
+
+## 🔥 Next Level
+
+- Make XSS intentionally exploitable → then patch it
+- Add stored XSS (comments section)
+
+
+
 
