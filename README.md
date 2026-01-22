@@ -8,6 +8,8 @@ The goal was to **manually identify, validate, and document SQL Injection (SQLi)
 
 The application runs **entirely on localhost**, demonstrating that professional security testing tools like Burp Suite can be used **offline against local development environments**, just as they are used against production systems.
 
+<img width="1362" height="733" alt="image" src="https://github.com/user-attachments/assets/84a61ef9-f35f-441a-bfb5-de3c0e34ef57" />
+
 ---
 
 ## 🎯 Objectives
