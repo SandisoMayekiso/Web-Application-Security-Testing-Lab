@@ -170,7 +170,7 @@ The payload was reflected in the HTML response as:
 
  &lt ;b& gt;hello& lt;/b &g t;
 
-Conclusion
+## Conclusion
 
 User input is reflected, but properly HTML-encoded
 
@@ -183,7 +183,7 @@ Final Verdict
 ✅ No exploitable XSS vulnerability present
 ❌ No script execution possible
 
-Classification:
+## Classification:
 
 Reflected input present, but XSS mitigated via output encoding
 
@@ -192,14 +192,14 @@ Risk Level: Informational
 This demonstrates correct handling of user input and highlights the importance of distinguishing false positives during security testing.
 
 
-🔐 Security Impact Summary
+## 🔐 Security Impact Summary
 
 | Vulnerability | Status          | Risk          |
 | ------------- | --------------- | ------------- |
 | SQL Injection | Confirmed       | High          |
 | Reflected XSS | Not exploitable | Informational |
 
-🛡️ Mitigation Recommendations
+## 🛡️ Mitigation Recommendations
 SQL Injection
 
 Use parameterized queries / prepared statements
@@ -208,7 +208,7 @@ Avoid string-based SQL query construction
 
 Validate and sanitize all user input
 
-XSS
+## XSS
 
 Continue using output encoding
 
@@ -230,7 +230,7 @@ XSS response analysis
 
 (Screenshots to be added to /screenshots directory)
 
-📈 Skills Demonstrated
+## 📈 Skills Demonstrated
 
 Manual web application penetration testing
 
@@ -258,12 +258,12 @@ Ability to explain why a vulnerability does or does not exist
 
 Portfolio-level security thinking suitable for junior roles
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 All testing was performed only on a locally hosted application created for learning purposes.
 No unauthorized testing was conducted against real-world systems.
 
-👤 Author
+## 👤 Author
 
 Sandiso
 Aspiring Cybersecurity & Web Application Security Professional
